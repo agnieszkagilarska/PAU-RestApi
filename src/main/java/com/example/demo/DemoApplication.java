@@ -13,6 +13,7 @@ public class DemoApplication {
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(DemoApplication.class, args);
         context.getBean(StudentRepository.class).save(new Student("Jan", "Kowalski", StudentCondition.ODRABIAJACY, 1990, 100, "adwas33@wp.pl"));
+        context.getBean(StudentRepository.class).save(new Student("Jan", "Kowalski", StudentCondition.ODRABIAJACY, 1990, 100, "adwas33@wp.pl"));
     }
 
 }
